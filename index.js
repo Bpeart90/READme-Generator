@@ -8,6 +8,11 @@ function promptUser() {
     return inquirer.prompt([
         {
             type: "input",
+            name: "username",
+            message: "what is your GitHub username?"
+        },
+        {
+            type: "input",
             name: "email",
             message: "what is your GitHub email?"
         },
@@ -41,6 +46,11 @@ function promptUser() {
             type: "input",
             name: "repo",
             message: "what should a user know before using this repo?"
+        },
+        {
+            type: "input",
+            name: "dependency",
+            message: "what code should be entered to run dependencies?"
         },
     ])
 }

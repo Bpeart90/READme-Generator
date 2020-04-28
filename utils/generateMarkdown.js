@@ -1,22 +1,40 @@
 function generateMarkdown(answers) {
   return `
 # ${answers.title}
-# Readme.md
 
-    * My GitHub email is ${answers.email}
-    
-    * Title ${answers.title}.
-    
-    * Lincense $${pickLicense(answers.license)}
-       
-    *My collaborators were ${answers.collaborator}
-    
-    *the purpose of the application is ${answers.linkedin}
-    
-    *Test: what is the code used to run a test ${answers.test}
+Link: https://github.com/${answers.username}/${answers.title}
 
-    *Repo: ${answers.test}
-    
+## Project description
+${answers.description}
+
+## Table of contents
+1. [License](#license)
+2. [Dependencies](#dependency)
+3. [How to Use Repo](#howtouserepo)
+4. [Collaborator](#collaborator)
+5. [Tests](#tests)
+6. [Contact Me](#contact)
+
+Lincense ${pickLicense(answers.license)}
+the licesnse used for this project is ${answers.license}
+
+###Dependecy
+What code should be used to run required Depencies:
+the code is ${answers.dependency}
+
+###Repo
+How should this Repo be used: ${answers.repo}
+
+### Collaborator
+Collaborators on this project are:
+${answers.collaborator}
+
+### Tests
+To run tests, run the following command: 
+${answers.test}
+
+###contact
+to contact the user creator of the repo please contact: Github Username: ${answers.username} or by email at ${answers.email}
     `;
 }
 const pickLicense = (license) => {
