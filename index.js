@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-
+const generateReadme = require("./utils/generateMarkdown")
 const writeFileAsync = util.promisify(fs.writeFile);
 
 function promptUser() {
@@ -42,18 +42,16 @@ function promptUser() {
             name: "repo",
             message: "what should a user know before using this repo?"
         },
-    ]);
+    ])
 }
 
-async function writeToFile(fileName, data) {
-    console.log(fileName);
-    console.log(data);
-    const data = inquirer(data)
+async function writeToFile() {
+
     try {
         const answers = await promptUser();
-        const readme = await generateReadme(data);
+        const readme = await generateReadme(answers);
 
-        await writeFileAsync("readme.md", markDown);
+        await writeFileAsync("readme.md", readme);
 
         console.log("Successfully wrote to readme.md");
     } catch (err) {
@@ -61,4 +59,4 @@ async function writeToFile(fileName, data) {
     }
 }
 
-init();
+writeToFile();
