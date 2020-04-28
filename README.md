@@ -1,7 +1,7 @@
 
-# Readme.md Generator
+# Readme.md generator
 
-Link: https://github.com/Bpeart90/Readme.md Generator
+Link: https://github.com/Bpeart90/Readme.md generator
 
 ## Project description
 undefined
@@ -14,24 +14,24 @@ undefined
 5. [Tests](#tests)
 6. [Contact Me](#contact)
 
-Lincense [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+### Lincense [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 the licesnse used for this project is MIT
 
-###Dependecy
+### Dependecy
 What code should be used to run required Depencies:
-the code is readme
+the code is npm install
 
-###Repo
-How should this Repo be used: this is a priate repo and access is required for use.
+### Repo
+How should this Repo be used: this repo requires permission for use.
 
 ### Collaborator
 Collaborators on this project are:
-Tom, Tani, Michell
+Tani, Tom, Michell
 
 ### Tests
 To run tests, run the following command: 
 run test
 
-###contact
-to contact the user creator of the repo please contact: Github Username: Bpeart90 or by email at Brandonj.peart1@gmail.com
+### contact
+to contact the user creator of the repo please contact: Github Username: Bpeart90 or by email at brandonj.peart1@gmail.com
     

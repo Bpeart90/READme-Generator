@@ -15,14 +15,14 @@ ${answers.description}
 5. [Tests](#tests)
 6. [Contact Me](#contact)
 
-Lincense ${pickLicense(answers.license)}
+### Lincense ${pickLicense(answers.license)}
 the licesnse used for this project is ${answers.license}
 
-###Dependecy
+### Dependecy
 What code should be used to run required Depencies:
 the code is ${answers.dependency}
 
-###Repo
+### Repo
 How should this Repo be used: ${answers.repo}
 
 ### Collaborator
@@ -33,7 +33,7 @@ ${answers.collaborator}
 To run tests, run the following command: 
 ${answers.test}
 
-###contact
+### contact
 to contact the user creator of the repo please contact: Github Username: ${answers.username} or by email at ${answers.email}
     `;
 }
